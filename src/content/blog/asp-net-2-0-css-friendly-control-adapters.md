@@ -9,11 +9,11 @@ ASP.NET 2.0 CSS Friendly Control Adapters are useful for presenting
 neat and clean html code for various controls like GridView, Menu,
 TreeView, DetailsView etc.
 
-By default ASP.Net controls are rendered in browser using <table> tags which takes more time to load and make the html code very difficult to read. But now come in picture – ASP.NET 2.0 CSS Friendly Control Adapters which generate CSS friendly html code. At present these adapters can be used with GridView, Menu, DetailsView, TreeView, FormView and Login controls.
+By default ASP.Net controls are rendered in browser using <table> tags which takes more time to load and make the HTML code difficult to read. But now come in picture – ASP.NET 2.0 CSS Friendly Control Adapters which generate CSS-friendly HTML code. At present these adapters can be used with GridView, Menu, DetailsView, TreeView, FormView and Login controls.
 
 More information and Download can be found here –
 
-[http://www.asp.net/cssadapters](http://www.asp.net/cssadapters/ "http://www.asp.net/cssadapters/")
+[ASP.NET CSS Friendly Control Adapters](http://www.asp.net/cssadapters/)
 
 A very nice walkthrough tutorial is also there –
 
@@ -21,7 +21,6 @@ A very nice walkthrough tutorial is also there –
 
 These adapters can also be used with existing website by reading the following whitepaper –
 
-[http://www.asp.net/CSSAdapters/WhitePaper.aspx#SamplesUsingInYourWebSite
-](http://www.asp.net/CSSAdapters/WhitePaper.aspx#SamplesUsingInYourWebSite "http://www.asp.net/CSSAdapters/WhitePaper.aspx#SamplesUsingInYourWebSite")
+[ASP.NET CSS Friendly Control Adapters whitepaper](http://www.asp.net/CSSAdapters/WhitePaper.aspx#SamplesUsingInYourWebSite)
 
 I am using these adapters and found them very useful for every asp.net developer.

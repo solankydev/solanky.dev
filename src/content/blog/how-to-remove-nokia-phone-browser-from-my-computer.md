@@ -13,12 +13,9 @@ she has uninstalled it but “Nokia Phone Broswer” shortcut was still
 showing in “Other” section in “My Computer”. After a very long
 exercise she was still unable to remove that. Then she told me
 about the problem and after searching for a while I found the
-follwing solution-1. Download Tweak UI from the following link –
+following solution-
 
-[
-http://www.microsoft.com/windowsxp/downloads/powertoys/xppowertoys.mspx](http://www.microsoft.com/windowsxp/downloads/powertoys/xppowertoys.mspx)
-
-2\. Install Tweak UI.
+1. Microsoft no longer provides Tweak UI from its Windows XP PowerToys download page. If you already have Tweak UI installed from a trusted source, open it.
 
 3\. Open Tweak UI and click on My Computer.
 

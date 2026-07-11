@@ -15,6 +15,6 @@ I have purchased Nokia 5230 Touchscreen mobile two days back and I would like to
 
 -   [Wordmobi](http://wordmobi.googlecode.com/) – to post on wordpress directly from mobile (I came to know that official app from wordpress for Nokia is coming soon..)
 
-Besides that I am looking for some another apps on Ovi Store and have downloaded some small apps like SMS Preview, Nokia Photo Browser, Weather Touch, Memory Touch etc. If you know about any other good application for 5230 (or 5800/5530/5533/N97/N97 mini as all are compatible) please let me know.
+Besides that I am looking for some other apps on Ovi Store and have downloaded some small apps like SMS Preview, Nokia Photo Browser, Weather Touch, Memory Touch etc. If you know about any other good application for 5230 (or 5800/5530/5533/N97/N97 mini as all are compatible) please let me know.
 
-[![](../../assets/blog/my-new-nokia-5230-touchscreen/nokia-5230-white.png "nokia-5230-white")](http://deependrasolanky.wordpress.com/wp-content/uploads/2010/02/nokia-5230-white.png)
+[![Nokia 5230 white touchscreen phone](../../assets/blog/my-new-nokia-5230-touchscreen/nokia-5230-white.png "nokia-5230-white")](http://deependrasolanky.wordpress.com/wp-content/uploads/2010/02/nokia-5230-white.png)

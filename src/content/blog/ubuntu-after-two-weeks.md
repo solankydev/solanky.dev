@@ -6,7 +6,7 @@ draft: false
 originalUrl: "https://deependrasolanky.wordpress.com/2007/07/04/ubuntu-after-two-weeks/"
 ---
 In the last article I have written about my migration to Ubuntu from Windows. Now I have around two weeks of experience of working with Ubuntu so I think I am in a position to tell about my experience with it. My first sentence will be same as earlier – I love it. At the time of installation, I was thinking that I have to revert back to Windows in one or two weeks but now I don’t want to use Windows any more. I am not having any problem of working with Ubuntu in these two weeks. Most of the things I was doing on Windows, I am still doing the same on Ubuntu also.
-Actually now I have installed Kubuntu-Desktop on it so you can say I am using Kubuntu now. Both Ubuntu and Kubuntu are same except that Ubuntu uses Gnome desktop environment and the Kbuntu uses KDE. Both are good but I like Kubuntu more because it is somewhat similar to Windows in looks so it is easier for me to use in a better way. At present I am using the following software on my (K)Ubuntu.
+Actually now I have installed Kubuntu-Desktop on it so you can say I am using Kubuntu now. Both Ubuntu and Kubuntu are same except that Ubuntu uses Gnome desktop environment and the Kubuntu uses KDE. Both are good but I like Kubuntu more because it is somewhat similar to Windows in looks so it is easier for me to use in a better way. At present I am using the following software on my (K)Ubuntu.
 
 OpenOffice
 

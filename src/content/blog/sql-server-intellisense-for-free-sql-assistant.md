@@ -11,6 +11,6 @@ It is very difficult to remember every table/procedure/function name in sql serv
 It works not only for SQL Server but also with DB2, Oracle, MySQL.
 It can be downloaded from following location –
 
-**[ttp://www.softtreetech.com/sqlassist/index.htm](http://www.softtreetech.com/sqlassist/index.htm "http://www.softtreetech.com/sqlassist/index.htm")**
+**[http://www.softtreetech.com/sqlassist/index.htm](http://www.softtreetech.com/sqlassist/index.htm "http://www.softtreetech.com/sqlassist/index.htm")**
 
 Happy SQL Intellisense……

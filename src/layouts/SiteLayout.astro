@@ -22,7 +22,8 @@ const canonicalUrl = new URL(currentPath, Astro.site);
 			(function () {
 				const stored = localStorage.getItem('starlight-theme');
 				const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-				document.documentElement.dataset.theme = stored || (prefersDark ? 'dark' : 'light');
+				const theme = stored === 'light' || stored === 'dark' ? stored : (prefersDark ? 'dark' : 'light');
+				document.documentElement.dataset.theme = theme;
 			})();
 		</script>
 		<meta charset="utf-8" />

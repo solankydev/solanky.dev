@@ -1,26 +1,6 @@
 ---
+import { openzaApps } from '../../data/openza';
 import SiteLayout from '../../layouts/SiteLayout.astro';
-
-const apps = [
-	{
-		name: 'Tasks',
-		logo: '/openza/tasks.svg',
-		description: 'Keep tasks locally, with optional Todoist and Microsoft To Do sync.',
-		href: '/openza/tasks/',
-	},
-	{
-		name: 'Reader',
-		logo: '/openza/reader.svg',
-		description: 'Open and read Markdown files without editing them.',
-		href: '/openza/reader/',
-	},
-	{
-		name: 'Flow',
-		logo: '/openza/flow.svg',
-		description: 'See GitHub pull requests that need your attention.',
-		href: '/openza/flow/',
-	},
-];
 ---
 
 <SiteLayout title="Projects · Deependra Solanky" description="Personal and open-source projects by Deependra Solanky.">
@@ -41,13 +21,13 @@ const apps = [
 				</div>
 
 				<ul class="project-list" aria-label="Projects under Openza">
-					{apps.map((app) => (
+					{openzaApps.map((app) => (
 						<li>
-							<a class="project-link" href={app.href}>
+							<a class="project-link" href={app.docsUrl}>
 								<img src={app.logo} alt="" width="44" height="44" />
 								<span>
 									<strong>{app.name}</strong>
-									<small>{app.description}</small>
+									<small>{app.tagline}</small>
 								</span>
 							</a>
 						</li>

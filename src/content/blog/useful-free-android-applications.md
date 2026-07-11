@@ -7,7 +7,7 @@ originalUrl: "https://deependrasolanky.wordpress.com/2011/12/17/useful-free-andr
 ---
 It was around six months back when I purchased my first Android phone LG Optimus One after in love with Nokia for 4.5 years.  This was a pretty happy transition due to availability of lot of useful applications available for Android in comparison of Symbian, the underlying operating system of Nokia phones. There is a huge difference in applications available on Android Market and Nokia Ovi Store in terms of both Quantity and Quality.
 
-![](../../assets/blog/useful-free-android-applications/LG-OPTIMUS-One_01.jpg)
+![LG Optimus One Android phone](../../assets/blog/useful-free-android-applications/LG-OPTIMUS-One_01.jpg)
 
 Based upon 6 months of experience with Android I would like to list some useful applications along with their download link and small description. All applications mentioned are free. Here I go with first 5.
 

@@ -72,5 +72,5 @@ Value data box.
 Click OK, and then close Registry Editor.
 
 7.
-Click Start, click Run, type **regsvr32 “C:\\Program Files\\Microsoft SQL Server\\80\\Tools\\Binn\\sqlmmc.dll”** , and then click
+Click Start, click Run, type `regsvr32 "C:\\Program Files\\Microsoft SQL Server\\80\\Tools\\Binn\\sqlmmc.dll"`, and then click
 OK.

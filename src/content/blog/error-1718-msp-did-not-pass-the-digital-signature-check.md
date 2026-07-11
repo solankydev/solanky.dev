@@ -1,5 +1,5 @@
 ---
-title: "\"Error 1718. \\*.msp did not pass the digital signature check \""
+title: "Error 1718. *.msp did not pass the digital signature check"
 publishDate: 2007-03-09
 tags: []
 draft: false
@@ -10,7 +10,7 @@ Install Problem: “Error 1718. \*.msp did not pass the digital
 signature check “
 
 I was trying to install the Visual Studio 2005 Service Pack 1 on
-Visual Studio 2005 Standared Edition on Windows Server 2003 but
+Visual Studio 2005 Standard Edition on Windows Server 2003 but
 after around 10 minutes the installation stops throwing the
 following error:
 
@@ -20,7 +20,7 @@ signature check”**
 \> > (The file name might be different for your
 installation.)
 
-I have searhed Google for the same and found the following
+I have searched Google for the same and found the following
 workaround.
 
 \> >

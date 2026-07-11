@@ -9,7 +9,7 @@ There was a requirement of presenting the data in Charts in one of application, 
 
 [WebChart Control for ASP.NET](http://www.carlosag.net/Tools/WebChart/Default.aspx) and [ZedGraph](http://zedgraph.org/wiki/index.php?title=Main_Page) .
 
-**1\. WebChart Control for ASP.NET** – It is very good control for creating charts in ASP.NET. It has all the standard featurs of a normal asp.net control like design time properties, auto formatting. And presenting the data from SQL Server is very easy. There are very nice tutorials available also.
+**1\. WebChart Control for ASP.NET** – It is very good control for creating charts in ASP.NET. It has all the standard features of a normal asp.net control like design-time properties, auto formatting. And presenting the data from SQL Server is very easy. There are very nice tutorials available also.
 
 You can download it from [http://www.carlosag.net/Tools/WebChart/Default.aspx](http://www.carlosag.net/Tools/WebChart/Default.aspx) .
 
@@ -17,7 +17,7 @@ There is a nice tutorial available on 4GuysFromRolla.com for creating charts usi
 
 **2\. ZedGraph** – ZedGraph is not a control but a Class Library for creating charts in ASP.NET. The best thing is that it is Open Source. Creating charts using this library is not so easy as in WebChart Control but I think it has more features if we compare both. And it has good documentation also being it a Open Source project.
 
-You can downlaod it from souceforge [http://sourceforge.net/projects/zedgraph/](http://sourceforge.net/projects/zedgraph/)
+You can download it from SourceForge [http://sourceforge.net/projects/zedgraph/](http://sourceforge.net/projects/zedgraph/)
 
 It also has a wiki [http://zedgraph.org/wiki/index.php?title=Main\_Page](http://zedgraph.org/wiki/index.php?title=Main_Page)
 

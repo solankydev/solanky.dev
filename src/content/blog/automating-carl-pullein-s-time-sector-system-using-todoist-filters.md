@@ -17,7 +17,7 @@ Todoist is my current task manager app, and I am following Carl Pullein's Time S
 
 While this approach has been helpful in prioritizing my workload, I found the manual process of moving tasks between time sectors during my weekly reviews a bit too time-consuming. To streamline my workflow, I made a few adjustments, integrating Todoist’s built-in features like Filters and Due Dates to automate parts of the process.
 
-### Switching from Projects to Filters
+## Switching from Projects to Filters
 
 Carl’s system suggests using the “My Projects” section for time sectors and “Labels” for work areas. However, I found that constantly shifting tasks between "This Week" and "Next Week" was too manual. About two weeks ago, I decided to switch from using Projects to Filters. Todoist’s due dates are well-suited for this, as they can manage the timing automatically. Since making this change, my daily and weekly reviews have become much quicker.
 
@@ -27,9 +27,9 @@ I also transitioned from using Labels to Projects for organizing work areas. Dra
 
 I rely on due date shortcuts and natural language processing (NLP) for due dates, which eliminates the need to manually pick dates from the calendar.
 
-![](../../assets/blog/automating-carl-pullein-s-time-sector-system-using-todoist-filters/image.png)
+![Todoist filter list for Time Sector System setup](../../assets/blog/automating-carl-pullein-s-time-sector-system-using-todoist-filters/image.png)
 
-![](../../assets/blog/automating-carl-pullein-s-time-sector-system-using-todoist-filters/image-2.png)
+![Todoist due-date shortcut examples for time sectors](../../assets/blog/automating-carl-pullein-s-time-sector-system-using-todoist-filters/image-2.png)
 
 This Week – This Weekend (Saturday)
 Next Week – Next Week (Next Monday)

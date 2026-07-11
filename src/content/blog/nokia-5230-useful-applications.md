@@ -17,18 +17,18 @@ Its been around 3 months now since I purchased my Nokia 5230. I have downloaded 
 
 -   [Wordmobi](http://wordmobi.googlecode.com/) – to post on wordpress directly from mobile (I came to know that official app from wordpress for Nokia is coming soon..)
 
--   [Qik](http://qik.com/) – For recoding and sharing live videos
+-   [Qik](http://qik.com/) – For recording and sharing live videos
 
--   [Skype](http://www.skype.com) – to call with skype contacts
+-   [Skype](http://www.skype.com) – to call with Skype contacts
 
--   [Google Maps](http://www.google.com/mobile/maps/) – although Ovi maps application is already there but Google maps are also required time to time
+-   [Google Maps](http://www.google.com/mobile/maps/) – although Ovi maps application is already there but Google Maps are also required time to time
 
 -   [Converter Touch](http://store.ovi.com/content/16234) – a very nice and beautiful application for conversion of weight, area, distance and many other types
 
 -   [NewsHunt](http://store.ovi.com/content/27867) –  a lot of Indian newspapers of various languages can be read in the application
 
--   [Wikipedia](http://developer.symbian.org/wiki/index.php/Wikipedia_Reader_Widget) – wikipedia reader widget for Symbian mobiles
+-   [Wikipedia](http://developer.symbian.org/wiki/index.php/Wikipedia_Reader_Widget) – Wikipedia reader widget for Symbian mobiles
 
--   [Snaptu](http://www.snaptu.com/) – this is I think the most useful application. Actually it is a combination of various applications like – facebook, twitter, techcrunch, lifehacker, rss reader, cricinfo etc
+-   [Snaptu](http://www.snaptu.com/) – this is I think the most useful application. Actually it is a combination of various applications like – Facebook, Twitter, techcrunch, lifehacker, rss reader, cricinfo etc
 
 -   [Shazam](http://www.shazam.com/music/web/pages/nokia.html) – to identify any running song, interesting application

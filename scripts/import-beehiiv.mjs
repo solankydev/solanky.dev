@@ -1,7 +1,7 @@
 import { mkdir, writeFile } from 'node:fs/promises';
-import { basename, extname } from 'node:path';
 import { parseHTML } from 'linkedom';
 import TurndownService from 'turndown';
+import { safeYaml, uniqueName } from './import-utils.mjs';
 
 const posts = [
 	{
@@ -29,23 +29,6 @@ const contentDir = new URL('./src/content/blog/', root);
 const assetDir = new URL('./src/assets/blog/', root);
 const turndown = new TurndownService({ headingStyle: 'atx', bulletListMarker: '-', codeBlockStyle: 'fenced' });
 
-function safeYaml(value) {
-	return JSON.stringify(value.replace(/\s+/g, ' ').trim());
-}
-
-function uniqueName(url, usedNames) {
-	const parsed = new URL(url);
-	let name = decodeURIComponent(basename(parsed.pathname)) || 'image';
-	name = name.replace(/[^a-zA-Z0-9._-]+/g, '-');
-	if (!extname(name)) name += '.jpg';
-	const extension = extname(name);
-	const stem = name.slice(0, name.length - extension.length);
-	let candidate = name;
-	let counter = 2;
-	while (usedNames.has(candidate.toLowerCase())) candidate = `${stem}-${counter++}${extension}`;
-	usedNames.add(candidate.toLowerCase());
-	return candidate;
-}
 
 for (const post of posts) {
 	const sourceUrl = `https://www.solanky.dev/p/${post.slug}`;

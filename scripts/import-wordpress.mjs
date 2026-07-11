@@ -1,6 +1,6 @@
 import { mkdir, writeFile } from 'node:fs/promises';
-import { basename, extname } from 'node:path';
 import TurndownService from 'turndown';
+import { plainTextFromHtml, safeYaml, uniqueName } from './import-utils.mjs';
 
 const site = 'deependrasolanky.wordpress.com';
 const apiBase = `https://public-api.wordpress.com/wp/v2/sites/${site}/posts?per_page=100&_fields=id,date,slug,link,title,content`;
@@ -39,23 +39,6 @@ function markdownText(html) {
 	return turndown.turndown(html ?? '').replace(/\n{3,}/g, '\n\n').trim();
 }
 
-function safeYaml(value) {
-	return JSON.stringify(value.replace(/\s+/g, ' ').trim());
-}
-
-function uniqueName(url, usedNames) {
-	const parsed = new URL(url);
-	let name = decodeURIComponent(basename(parsed.pathname)) || 'image';
-	name = name.replace(/[^a-zA-Z0-9._-]+/g, '-');
-	if (!extname(name)) name += '.jpg';
-	const extension = extname(name);
-	const stem = name.slice(0, name.length - extension.length);
-	let candidate = name;
-	let counter = 2;
-	while (usedNames.has(candidate.toLowerCase())) candidate = `${stem}-${counter++}${extension}`;
-	usedNames.add(candidate.toLowerCase());
-	return candidate;
-}
 
 for (const post of posts) {
 	let html = post.content.rendered ?? '';
@@ -83,7 +66,7 @@ for (const post of posts) {
 		}
 	}
 
-	const title = markdownText(post.title.rendered);
+	const title = plainTextFromHtml(post.title.rendered);
 
 	const body = markdownText(html);
 	const frontmatter = [

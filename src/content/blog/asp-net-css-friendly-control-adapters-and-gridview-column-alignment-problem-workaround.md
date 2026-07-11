@@ -28,18 +28,17 @@ adapters)
 1\. Make a new class in GridViewExample.css file (located at
 App\_Themes/Basic folder) as –
 
-PrettyGridView .AspNet-GridView table tbody tr td.**leftalign**
-
-{
-
-text-align:left;
-
+```css
+PrettyGridView .AspNet-GridView table tbody tr td.leftalign {
+	text-align: left;
 }
+```
 
-2\. In the Gridview make changes as following –
+2. In the Gridview make changes as following –
 
-<asp:BoundField ItemStyle-CssClass=”**leftalign**” DataField=”xxxx”
-HeaderText=”xxxx” />
+```xml
+<asp:BoundField ItemStyle-CssClass="leftalign" DataField="xxxx" HeaderText="xxxx" />
+```
 
 And you are done.
 
