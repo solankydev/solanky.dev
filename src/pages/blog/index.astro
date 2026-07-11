@@ -1,0 +1,35 @@
+---
+import { getCollection } from 'astro:content';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft))
+	.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+const dateFormatter = new Intl.DateTimeFormat('en', { day: 'numeric', month: 'short', year: 'numeric' });
+---
+
+<SiteLayout title="Blog · Deependra Solanky" description="Writing by Deependra Solanky on products, productivity, technology, and the systems we use to get work done.">
+	<section class="blog-index" aria-labelledby="blog-title">
+		<div class="container blog-inner">
+			<header class="page-heading">
+				<h1 id="blog-title">Blog</h1>
+				<p>Products, productivity, technology, and the systems we use to get work done.</p>
+			</header>
+
+			{posts.length > 0 ? (
+				<ol class="post-list">
+					{posts.map((post) => (
+						<li>
+							<time datetime={post.data.publishDate.toISOString()}>{dateFormatter.format(post.data.publishDate)}</time>
+							<div>
+								<h2><a href={`/blog/${post.id}/`}>{post.data.title}</a></h2>
+								{post.data.description && <p>{post.data.description}</p>}
+							</div>
+						</li>
+					))}
+				</ol>
+			) : (
+				<p class="empty-copy">The archive is being prepared.</p>
+			)}
+		</div>
+	</section>
+</SiteLayout>

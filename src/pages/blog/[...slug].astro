@@ -1,0 +1,27 @@
+---
+import { getCollection, render } from 'astro:content';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+
+export async function getStaticPaths() {
+	const posts = await getCollection('blog', ({ data }) => !data.draft);
+	return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const dateFormatter = new Intl.DateTimeFormat('en', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+
+<SiteLayout title={`${post.data.title} · Deependra Solanky`} description={post.data.description}>
+	<article class="article-page">
+		<div class="container article-inner">
+			<header class="article-heading">
+				<a class="back-link" href="/blog/">Blog</a>
+				<h1>{post.data.title}</h1>
+				{post.data.description && <p>{post.data.description}</p>}
+				<time datetime={post.data.publishDate.toISOString()}>{dateFormatter.format(post.data.publishDate)}</time>
+			</header>
+			<div class="article-content"><Content /></div>
+		</div>
+	</article>
+</SiteLayout>

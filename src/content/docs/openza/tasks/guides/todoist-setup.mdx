@@ -1,0 +1,60 @@
+---
+title: Connect Todoist
+description: Connect your Todoist account to Openza Tasks
+---
+
+import { Steps, Aside } from '@astrojs/starlight/components';
+
+Todoist provides a private access code called an API token. Openza Tasks uses this token to read your Todoist tasks and update their completion status.
+
+## Copy your Todoist token
+
+<Steps>
+1. Sign in at [todoist.com](https://todoist.com).
+2. Open **Settings** from your profile menu.
+3. Open **Integrations**, then **Developer**.
+4. Copy the API token shown by Todoist.
+</Steps>
+
+<Aside type="caution">
+Treat this token like a password. Anyone who has it may be able to access your Todoist account.
+</Aside>
+
+## Connect Todoist in Openza Tasks
+
+<Steps>
+1. Open **Settings** in Openza Tasks.
+2. Open **Integrations**.
+3. Paste the token into the Todoist field.
+4. Select **Connect Todoist**.
+5. Open Sync and select **Sync now**.
+</Steps>
+
+Windows protects the saved token on this PC.
+
+## What syncs
+
+| Todoist information | Available in Openza Tasks |
+|----------------------|---------------------------|
+| Tasks | Yes |
+| Projects | Yes |
+| Labels | Yes |
+| Due dates | Yes |
+| Priorities | Yes |
+| Complete and reopen tasks | Yes |
+| Create, edit, or delete Todoist tasks | No |
+| Comments | No |
+
+## Troubleshooting
+
+### Todoist says the token is invalid
+
+1. Copy the complete token again from Todoist settings.
+2. If needed, create a new token in Todoist.
+3. Disconnect Todoist in Openza Tasks, then connect it again.
+
+### Tasks are not syncing
+
+1. Check your internet connection.
+2. Open Sync and select **Sync now**.
+3. Confirm that your Todoist token is still active.

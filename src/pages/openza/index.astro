@@ -1,0 +1,36 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import { openzaApps } from '../../data/openza';
+---
+
+<SiteLayout title="Openza · Deependra Solanky" description="Openza is a collection of native, open-source Windows apps.">
+	<section class="openza-page" aria-labelledby="openza-title">
+		<div class="container openza-inner">
+			<header class="openza-heading">
+				<img src="/openza/openza.svg" alt="" width="64" height="64" />
+				<div>
+					<h1 id="openza-title">Openza</h1>
+					<p>Native, open-source apps for Windows.</p>
+				</div>
+			</header>
+			<p class="openza-intro">Openza is where I keep software built for focused, practical uses. The apps are designed for Windows, available as open source, and developed as time permits.</p>
+
+			<ul class="openza-apps" aria-label="Openza apps">
+				{openzaApps.map((app) => (
+					<li>
+						<img src={app.logo} alt="" width="52" height="52" />
+						<div>
+							<h2><a href={app.docsUrl}>{app.name}</a></h2>
+							<p>{app.tagline}</p>
+							<nav aria-label={`${app.name} links`}>
+								<a href={app.primaryUrl}>{app.primaryLabel}</a>
+								<a href={app.docsUrl}>Guide</a>
+								<a href={app.githubUrl}>Source</a>
+							</nav>
+						</div>
+					</li>
+				))}
+			</ul>
+		</div>
+	</section>
+</SiteLayout>

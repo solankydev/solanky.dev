@@ -1,0 +1,119 @@
+---
+title: Backup & Restore
+description: Protect your tasks with automatic backups
+---
+
+import { Steps, Aside } from '@astrojs/starlight/components';
+
+Openza Tasks can create backup copies of your data on this PC. OneDrive backup is an optional extra layer for recovery if the PC is lost, reset, or damaged.
+
+## Automatic Backups
+
+By default, Openza Tasks creates one startup backup per day. You can turn startup backups on or off in Settings.
+
+### Enabling/Disabling Auto-Backup
+
+<Steps>
+1. Open **Settings** from the left navigation
+2. Select **Backups**
+3. Toggle **Create a backup on startup** on or off
+</Steps>
+
+## Manual Backup
+
+Create a backup anytime from Settings:
+
+<Steps>
+1. Open **Settings**
+2. Click **Create backup**
+3. The backup appears in your backup list
+</Steps>
+
+## Backup Management
+
+### Viewing Backups
+
+Your backups are displayed with:
+- **Reason** such as daily, manual, legacy, pre-restore, pre-import, or pre-migration
+- **Date and time** of creation
+- **Task, project, and space counts**
+- **File size**
+
+### Export Backup
+
+Export a backup to save externally or transfer to another computer:
+
+<Steps>
+1. Select the backup you want to export
+2. Click **Export selected**
+3. Choose a save location
+4. The backup is saved as an Openza Tasks backup file
+</Steps>
+
+### Restore from Backup
+
+<Aside type="caution">
+Restoring a backup will replace your current data. This action cannot be undone.
+</Aside>
+
+<Steps>
+1. Select the backup to restore
+2. Click **Restore selected**
+3. Confirm the restore dialog
+</Steps>
+
+Openza Tasks creates a safety copy of your current data before restoring the backup.
+
+### Restore from External File
+
+Restore a backup from another computer or external storage:
+
+<Steps>
+1. Open **Settings**
+2. Click **Restore from file**
+3. Select an Openza Tasks backup file from your computer
+4. Confirm the restore dialog
+</Steps>
+
+<Aside type="note">
+Openza creates a safety copy of your current data before restoring an external backup.
+</Aside>
+
+## Backup Storage
+
+- Backups are stored in an Openza folder on this PC
+- Tasks keeps recent daily, weekly, monthly, and event backups
+- Use **Export selected** when you want a copy in a folder of your choice
+
+
+
+
+## OneDrive Backup
+
+OneDrive backup is optional and disabled by default. When enabled, Openza uploads backup snapshots to its app folder in the Microsoft account you choose for OneDrive backup.
+
+<Aside type="note">
+OneDrive backup is for recovery, not live sync between computers. The data on this PC remains the main copy.
+</Aside>
+
+You can enable passphrase encryption so backup files are encrypted before upload. On a new PC, encrypted OneDrive backups require the passphrase.
+
+### OneDrive Actions
+
+In Settings > Backups, you can:
+
+- Enable or disable OneDrive backup
+- Choose or change the Microsoft account used for OneDrive backup
+- Upload a backup now
+- Refresh the cloud backup list
+- Restore from a selected OneDrive backup
+- Add, change, or remove the optional passphrase
+
+Deleting a backup from this PC does not delete its OneDrive copy. Openza removes only its own older OneDrive backups when applying the backup-retention settings.
+
+## Best Practices
+
+- Keep auto-backup enabled for peace of mind
+- Enable OneDrive backup if you want recovery after PC loss, reset, or disk failure
+- After major changes, create a manual backup
+- Before restoring, Openza creates a safety copy of your current data
