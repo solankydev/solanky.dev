@@ -3,7 +3,7 @@ import { basename, extname } from 'node:path';
 import TurndownService from 'turndown';
 
 const site = 'deependrasolanky.wordpress.com';
-const api = `https://public-api.wordpress.com/wp/v2/sites/${site}/posts?per_page=100&_fields=id,date,slug,link,title,content`;
+const apiBase = `https://public-api.wordpress.com/wp/v2/sites/${site}/posts?per_page=100&_fields=id,date,slug,link,title,content`;
 const root = new URL('../', import.meta.url);
 const contentDir = new URL('./src/content/blog/', root);
 const assetDir = new URL('./src/assets/blog/', root);
@@ -19,10 +19,17 @@ const excludedSlugs = new Set([
 	'alwar-sariska-trip-second-day',
 ]);
 
-const posts = (await fetch(api).then((response) => {
+const allPosts = [];
+for (let page = 1; ; page++) {
+	const response = await fetch(`${apiBase}&page=${page}`);
+	if (response.status === 400) break;
 	if (!response.ok) throw new Error(`WordPress returned ${response.status}`);
-	return response.json();
-})).filter((post) => !excludedSlugs.has(post.slug));
+	const batch = await response.json();
+	if (!batch.length) break;
+	allPosts.push(...batch);
+}
+
+const posts = allPosts.filter((post) => !excludedSlugs.has(post.slug));
 
 const linkMap = new Map(posts.map((post) => [post.link.replace(/^http:/, 'https:'), `/blog/${post.slug}/`]));
 await mkdir(contentDir, { recursive: true });
