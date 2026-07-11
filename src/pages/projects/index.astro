@@ -1,0 +1,39 @@
+---
+import { openzaApps } from '../../data/openza';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+---
+
+<SiteLayout title="Projects · Deependra Solanky" description="Personal and open-source projects by Deependra Solanky.">
+	<section class="projects-page" aria-labelledby="projects-title">
+		<div class="container page-inner">
+			<header class="page-heading">
+				<h1 id="projects-title">Projects</h1>
+				<p>Things I build to explore an idea or solve a problem I have encountered. They are personal projects, developed and revisited when time permits.</p>
+			</header>
+
+			<section class="project-group" aria-labelledby="openza-title">
+				<div class="group-heading">
+					<img src="/openza/openza.svg" alt="" width="48" height="48" />
+					<div>
+						<h2 id="openza-title"><a href="/openza/">Openza</a></h2>
+						<p>Openza is the umbrella for my open-source software. It is where I keep native Windows apps built around focused, practical uses.</p>
+					</div>
+				</div>
+
+				<ul class="project-list" aria-label="Projects under Openza">
+					{openzaApps.map((app) => (
+						<li>
+							<a class="project-link" href={app.docsUrl}>
+								<img src={app.logo} alt="" width="44" height="44" />
+								<span>
+									<strong>{app.name}</strong>
+									<small>{app.tagline}</small>
+								</span>
+							</a>
+						</li>
+					))}
+				</ul>
+			</section>
+		</div>
+	</section>
+</SiteLayout>

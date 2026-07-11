@@ -1,0 +1,118 @@
+---
+title: Tasks
+description: Create, edit, and manage your tasks
+---
+
+import { Steps, Aside } from '@astrojs/starlight/components';
+
+Create tasks in Openza, import Markdown checkboxes, or bring in tasks from Todoist and Microsoft To Do.
+
+## Creating a Task
+
+<Steps>
+1. Click **Add task** in the command bar
+2. Enter a title (required)
+3. Optionally set:
+   - Description
+   - Project (defaults to Inbox)
+   - Priority (Urgent, High, Normal, Low)
+   - Date or deadline
+   - Labels
+4. Click **Save task**
+</Steps>
+
+<Aside type="note">
+A task created in Openza stays in Openza. To create a new Todoist or Microsoft To Do task, create it in that service and then sync.
+</Aside>
+
+## Editing a Task
+
+<Steps>
+1. Click a task to open the details panel
+2. Modify fields in the details pane
+3. Click **Save task**
+</Steps>
+
+Use the details pane to edit the selected task.
+
+### Editing tasks from connected services
+
+<Aside type="note">
+Tasks brought in from Todoist or Microsoft To Do remain connected to the original task. Projects, labels, notes, priority, dates, and deadlines you add in Openza stay in Openza.
+
+Completing or reopening a connected task also updates the original service after the next sync. Other edits do not change the original task.
+</Aside>
+
+## Completing a Task
+
+Complete a task in two ways:
+- Click the checkbox on the task row or in the details panel
+- Click the **Complete** button in the details panel footer
+
+Completed tasks:
+- Move to the Completed view
+- Record a completion timestamp
+- Update the original Todoist or Microsoft To Do task after the next sync
+
+### Reopening a Task
+
+To reopen a completed task:
+1. Go to the **Completed** view
+2. Click the task to open details
+3. Click **Reopen** in the footer
+
+<Aside type="tip">
+Completing or reopening a connected task updates the original service after the next sync.
+</Aside>
+
+## Deleting a Task
+
+<Steps>
+1. Select the task to open details
+2. Click **Delete** in the footer
+3. Confirm the deletion in the dialog
+</Steps>
+
+<Aside type="caution">
+Deletion cannot be undone. If a task is still connected to Todoist or Microsoft To Do, delete it in that service first and then sync. If the original task has already been deleted, Openza can remove its remaining local copy.
+</Aside>
+
+## Task Properties
+
+| Property | Description |
+|----------|-------------|
+| **Title** | Task name (required) |
+| **Description** | Additional details |
+| **Project** | Which project the task belongs to |
+| **Priority** | Urgent, High, Normal, or Low |
+| **Date** | The day the task should appear in dated views |
+| **Deadline** | The last acceptable day for the outcome |
+| **Labels** | Tags for categorization |
+| **Created** | When the task was created |
+| **Completed** | When the task was marked done |
+| **Source** | Where a connected task came from |
+
+## Task Views
+
+Access different views from the left navigation:
+
+| View | Shows |
+|------|-------|
+| **Inbox** | Tasks without a project and newly found items from connected services |
+| **Today** | Tasks due today |
+| **Overdue** | Past-due tasks (highlighted in red) |
+| **Next Actions** | Active tasks that have at least one label |
+| **Tasks** | All active tasks with filtering options |
+| **Completed** | Finished tasks, sorted by completion date |
+
+## Date conflicts
+
+If a date changes in Todoist or Microsoft To Do while you have chosen a different date in Openza, Tasks asks which date to keep. It remembers your choice so it does not ask again for the same change.
+
+## Quick Actions
+
+Task rows provide compact actions for:
+- **Copy task ID**
+- **Delete**, when the task is eligible for local deletion
+
+See [App Layout](/openza/tasks/features/dashboard) for sorting and filtering options in the Tasks view.

@@ -1,0 +1,42 @@
+---
+title: Connect Microsoft To Do
+description: Connect your Microsoft To Do account to Openza Tasks
+---
+
+import { Steps, Aside } from '@astrojs/starlight/components';
+
+Connect a personal Microsoft account or a work or school account to see Microsoft To Do tasks in Openza Tasks.
+
+## Connect your account
+
+<Steps>
+1. Open **Settings** in Openza Tasks.
+2. Open **Integrations** and select **Connect Microsoft To Do**.
+3. Choose the Microsoft account you want to use.
+4. Complete Microsoft sign-in when prompted.
+5. Open Sync and select **Sync now**.
+</Steps>
+
+You do not need to configure anything in Azure or provide an application ID.
+
+## What syncs
+
+| Microsoft To Do information | Available in Openza Tasks |
+|------------------------------|---------------------------|
+| Tasks | Yes |
+| Lists | Yes |
+| Due dates | Yes |
+| Categories | Imported as labels when available |
+| Complete and reopen tasks | Yes |
+| Create, edit, or delete Microsoft To Do tasks | No |
+| Repeating-task settings | Not currently |
+
+## Troubleshooting sign-in or sync
+
+1. Disconnect Microsoft To Do in Settings.
+2. Connect the account again.
+3. Open Sync and select **Sync now**.
+
+<Aside type="tip">
+Microsoft To Do and OneDrive backup can use different Microsoft accounts. Windows protects the saved sign-in information on this PC.
+</Aside>
