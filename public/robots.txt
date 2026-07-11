@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://solanky.dev/sitemap-index.xml
