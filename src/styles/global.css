@@ -121,7 +121,7 @@ main { flex: 1; display: flex; }
 .about-social-handles { display: flex; flex-wrap: wrap; gap: 0.65rem 1.25rem; margin: 1.25rem 0 0; }
 .social-handles a { display: inline-flex; color: var(--ink-secondary); text-decoration: none; }
 .social-handles a:hover { color: var(--ink); }
-.social-handles svg { width: 1.35rem; height: 1.35rem; fill: currentColor; }
+.social-handles svg { width: 1.35rem; height: 1.35rem; fill: currentcolor; }
 .projects-page { padding-block: clamp(3rem, 7vw, 5.5rem); }
 .page-inner { width: min(calc(100% - 3rem), 52rem); }
 .page-heading h1 { margin: 0; font-size: clamp(2.5rem, 6vw, 4rem); line-height: 1.05; letter-spacing: -0.04em; }
