@@ -1,15 +1,39 @@
 ---
+import { getCollection } from 'astro:content';
 import SiteLayout from '../layouts/SiteLayout.astro';
+
+const latestPosts = (await getCollection('blog', ({ data }) => !data.draft))
+	.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+	.slice(0, 3);
+const dateFormatter = new Intl.DateTimeFormat('en', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
 ---
 
 <SiteLayout description="Deependra Solanky's writing on products, productivity, technology, and personal projects.">
 	<section class="home" aria-labelledby="home-title">
 		<div class="container prose home-inner">
 			<h1 id="home-title" class="visually-hidden">Deependra Solanky</h1>
-			<p class="lead">This is where I write about products, productivity, technology, and the systems we use to get work done.</p>
-			<p>Most of my writing begins with something I use or a problem I am trying to understand: a way of organising work, a product decision, or a piece of technology. Writing helps me examine it more carefully and share what I learn along the way.</p>
-			<p>I also keep a few personal, open-source projects. They come from problems I wanted to solve for myself and evolve as time and interest allow.</p>
+			<p class="lead">I write about products, productivity, technology, and the systems we use to get work done.</p>
+			<p>Most posts begin with a tool I use or a problem I am trying to understand—how to organise work, why a product behaves the way it does, or what a piece of technology makes possible. Writing helps me examine these questions more carefully and share what I learn.</p>
+			<p>I also build a few personal, open-source projects, usually to solve problems I have myself. They evolve as my needs, time, and interests change.</p>
 			<p class="home-links"><a href="/blog/">Read my writing</a> <span aria-hidden="true">·</span> <a href="/projects/">Browse projects</a></p>
+
+			{latestPosts.length > 0 && (
+				<section class="latest-writing" aria-labelledby="latest-writing-title">
+					<h2 id="latest-writing-title">Latest writing</h2>
+					<ol class="post-list latest-posts">
+						{latestPosts.map((post) => (
+							<li>
+								<time datetime={post.data.publishDate.toISOString()}>{dateFormatter.format(post.data.publishDate)}</time>
+								<div>
+									<h3><a href={`/blog/${post.id}/`}>{post.data.title}</a></h3>
+									{post.data.description && <p>{post.data.description}</p>}
+								</div>
+							</li>
+						))}
+					</ol>
+					<p class="latest-writing-link"><a href="/blog/">View all writing</a></p>
+				</section>
+			)}
 		</div>
 	</section>
 </SiteLayout>
