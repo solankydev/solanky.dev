@@ -5,6 +5,7 @@ The MIT License in this repository applies to the website source code and reusab
 Unless a file states otherwise, the following are **not** licensed under the MIT License:
 
 - Articles and other editorial content under `src/content/blog/`
+- Openza user documentation under `src/content/docs/`
 - Openza, Tasks, Reader, and Flow names and logos
 - Screenshots, illustrations, photographs, and other brand or product assets
 - Imported media under `src/assets/blog/`

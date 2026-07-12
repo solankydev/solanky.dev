@@ -45,8 +45,10 @@ Do not run them after editing migrated posts without reviewing the resulting cha
 
 The Openza application source remains in the separate Tasks, Reader, and Flow repositories. This repository owns the public website and user-facing documentation only.
 
+This repository is public for transparency and deployment purposes. It is not a contribution-oriented project, and external pull requests or content edits are not accepted here. See [CONTRIBUTING.md](./CONTRIBUTING.md).
+
 ## Licensing
 
-The website code is available under the [MIT License](./LICENSE).
+The website source code and reusable software components are available under the [MIT License](./LICENSE).
 
-Articles, logos, screenshots, and other editorial or brand assets are not covered by the MIT License. See [CONTENT_LICENSE.md](./CONTENT_LICENSE.md).
+Articles, Openza user documentation, product names, logos, screenshots, imported media, and other editorial or brand assets are not covered by the MIT License. See [CONTENT_LICENSE.md](./CONTENT_LICENSE.md).
