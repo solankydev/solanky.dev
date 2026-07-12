@@ -5,14 +5,19 @@ import '../styles/global.css';
 interface Props {
 	title?: string;
 	description?: string;
+	socialImage?: string;
+	type?: 'website' | 'article';
 }
 
 const {
 	title = 'Deependra Solanky',
 	description,
+	socialImage,
+	type = 'website',
 } = Astro.props;
 const currentPath = Astro.url.pathname;
 const canonicalUrl = new URL(currentPath, Astro.site);
+const socialImageUrl = socialImage ? new URL(socialImage, Astro.site) : undefined;
 ---
 
 <!doctype html>
@@ -30,6 +35,15 @@ const canonicalUrl = new URL(currentPath, Astro.site);
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		{description && <meta name="description" content={description} />}
 		<link rel="canonical" href={canonicalUrl} />
+		<meta property="og:type" content={type} />
+		<meta property="og:title" content={title} />
+		<meta property="og:url" content={canonicalUrl} />
+		{description && <meta property="og:description" content={description} />}
+		{socialImageUrl && <meta property="og:image" content={socialImageUrl} />}
+		<meta name="twitter:card" content={socialImageUrl ? 'summary_large_image' : 'summary'} />
+		<meta name="twitter:title" content={title} />
+		{description && <meta name="twitter:description" content={description} />}
+		{socialImageUrl && <meta name="twitter:image" content={socialImageUrl} />}
 		<link rel="alternate" type="application/rss+xml" title="Deependra Solanky" href="/rss.xml" />
 		<meta name="theme-color" content="#f7f9f9" />
 		<link rel="icon" type="image/svg+xml" href="/openza-favicon.svg" />
