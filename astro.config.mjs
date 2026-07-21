@@ -56,7 +56,7 @@ export default defineConfig({
 						{ label: 'Introduction', slug: 'openza/flow/getting-started/introduction' },
 						{ label: 'Installation', slug: 'openza/flow/getting-started/installation' },
 						{ label: 'GitHub Sign-in', slug: 'openza/flow/getting-started/github-token' },
-						{ label: 'Pull Request Views', slug: 'openza/flow/features/pr-inbox' },
+						{ label: 'GitHub Activity Views', slug: 'openza/flow/features/pr-inbox' },
 						{ label: 'Reviewing Pull Requests', slug: 'openza/flow/guides/reviewing-prs' },
 						{ label: 'Notifications', slug: 'openza/flow/guides/notifications' },
 					],
