@@ -5,7 +5,7 @@ description: Connect Openza Flow to your GitHub account
 
 import { Steps, Aside } from '@astrojs/starlight/components';
 
-Flow needs permission to read the pull requests, releases, and workflow runs that your GitHub account can see.
+GitHub sign-in is optional. Flow needs permission to read the pull requests, releases, and workflow runs that your GitHub account can see only when you use GitHub Activity. Home, Agent Sessions, and Settings remain available without an account.
 
 ## Sign in with GitHub
 
@@ -43,4 +43,4 @@ Flow can show only information available to the signed-in GitHub account. For ex
 
 ## Sign out
 
-Open Settings in Flow and select **Sign out**. Flow removes the saved sign-in information from this PC and returns to the sign-in screen.
+Open the GitHub account menu in Flow and select **Sign out of GitHub**. Flow removes the saved token and username from this PC, clears its GitHub cache, and keeps local features available.
