@@ -1,0 +1,37 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+
+const apps = [
+	{ name: 'Openza Tasks', tagline: 'A calm, local-first task manager.', url: 'https://openza.org/tasks/' },
+	{ name: 'Openza Reader', tagline: 'Open and read Markdown files without editing them.', url: 'https://openza.org/reader/' },
+	{ name: 'Openza Flow', tagline: 'GitHub pull requests and coding-agent sessions in one place.', url: 'https://openza.org/flow/' },
+];
+---
+
+<SiteLayout title="Projects · Deependra Solanky" description="Personal and open-source projects by Deependra Solanky.">
+	<section class="projects-page" aria-labelledby="projects-title">
+		<div class="container page-inner">
+			<header class="page-heading">
+				<h1 id="projects-title">Projects</h1>
+				<p>Things I build to explore an idea or solve a problem I have encountered. They are personal projects, developed and revisited when time permits.</p>
+			</header>
+
+			<section class="project-group" aria-labelledby="openza-title">
+				<h2 id="openza-title" class="project-group-title"><a href="https://openza.org/">Openza</a></h2>
+				<p class="project-group-intro">My open-source apps live under Openza. Guides, downloads, and updates are on <a href="https://openza.org/">openza.org</a>.</p>
+				<ul class="project-list" aria-label="Openza apps">
+					{apps.map((app) => (
+						<li>
+							<a class="project-link" href={app.url}>
+								<span>
+									<strong>{app.name}</strong>
+									<small>{app.tagline}</small>
+								</span>
+							</a>
+						</li>
+					))}
+				</ul>
+			</section>
+		</div>
+	</section>
+</SiteLayout>

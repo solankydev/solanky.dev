@@ -127,15 +127,12 @@ main { flex: 1; display: flex; }
 .page-heading h1 { margin: 0; font-size: clamp(2.5rem, 6vw, 4rem); line-height: 1.05; letter-spacing: -0.04em; }
 .page-heading > p { max-width: 62ch; margin: 1.25rem 0 0; color: var(--ink-secondary); font-size: 1.15rem; line-height: 1.7; text-wrap: pretty; }
 .project-group { margin-top: clamp(3rem, 7vw, 5rem); }
-.group-heading { display: grid; grid-template-columns: 3rem minmax(0, 1fr); align-items: start; gap: 1rem; }
-.group-heading img { width: 3rem; height: 3rem; }
-.group-heading h2 { margin: 0; font-size: 1.65rem; line-height: 1.2; letter-spacing: -0.025em; }
-.group-heading h2 a { color: var(--ink); text-decoration: none; }
-.group-heading h2 a:hover { color: var(--accent-strong); }
-.group-heading p { max-width: 60ch; margin: 0.55rem 0 0; color: var(--ink-secondary); line-height: 1.65; }
-.project-list { display: grid; gap: 1.35rem; margin: 2.25rem 0 0 4rem; padding: 0; list-style: none; }
-.project-link { display: inline-grid; grid-template-columns: 2.75rem minmax(0, 1fr); align-items: start; gap: 0.9rem; color: var(--ink); text-decoration: none; }
-.project-link img { width: 2.75rem; height: 2.75rem; }
+.project-group-title { margin: 0; font-size: 1.65rem; line-height: 1.2; letter-spacing: -0.025em; }
+.project-group-title a { color: var(--ink); text-decoration: none; }
+.project-group-title a:hover { color: var(--accent-strong); }
+.project-group-intro { max-width: 60ch; margin: 0.55rem 0 0; color: var(--ink-secondary); line-height: 1.65; }
+.project-list { display: grid; gap: 1.35rem; margin: 2rem 0 0; padding: 0; list-style: none; }
+.project-link { display: inline-block; color: var(--ink); text-decoration: none; }
 .project-link span { display: grid; gap: 0.15rem; }
 .project-link strong { font-size: 1.05rem; font-weight: 700; }
 .project-link small { color: var(--ink-secondary); font-size: 0.98rem; line-height: 1.55; }

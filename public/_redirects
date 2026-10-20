@@ -17,8 +17,6 @@
 /flow/* https://openza.org/flow/:splat 301
 
 # Former project pages
-/projects / 302
-/projects/ / 302
 /projects/tasks https://openza.org/tasks/ 301
 /projects/tasks/ https://openza.org/tasks/ 301
 /projects/reader https://openza.org/reader/ 301
