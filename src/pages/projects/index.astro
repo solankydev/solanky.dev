@@ -1,6 +1,11 @@
 ---
-import { openzaApps } from '../../data/openza';
 import SiteLayout from '../../layouts/SiteLayout.astro';
+
+const apps = [
+	{ name: 'Openza Tasks', tagline: 'A simple, local-first task app.', url: 'https://openza.org/tasks/' },
+	{ name: 'Openza Reader', tagline: 'A focused Markdown reader for Windows.', url: 'https://openza.org/reader/' },
+	{ name: 'Openza Flow', tagline: 'Agent sessions from Windows and WSL in one place.', url: 'https://openza.org/flow/' },
+];
 ---
 
 <SiteLayout title="Projects · Deependra Solanky" description="Personal and open-source projects by Deependra Solanky.">
@@ -12,19 +17,12 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
 			</header>
 
 			<section class="project-group" aria-labelledby="openza-title">
-				<div class="group-heading">
-					<img src="/openza/openza.svg" alt="" width="48" height="48" />
-					<div>
-						<h2 id="openza-title"><a href="/openza/">Openza</a></h2>
-						<p>Openza is the umbrella for my open-source software. It is where I keep native Windows apps built around focused, practical uses.</p>
-					</div>
-				</div>
-
-				<ul class="project-list" aria-label="Projects under Openza">
-					{openzaApps.map((app) => (
+				<h2 id="openza-title" class="project-group-title"><a href="https://openza.org/">Openza</a></h2>
+				<p class="project-group-intro">My open-source apps live under Openza. Guides, downloads, and updates are on <a href="https://openza.org/">openza.org</a>.</p>
+				<ul class="project-list" aria-label="Openza apps">
+					{apps.map((app) => (
 						<li>
-							<a class="project-link" href={app.docsUrl}>
-								<img src={app.logo} alt="" width="44" height="44" />
+							<a class="project-link" href={app.url}>
 								<span>
 									<strong>{app.name}</strong>
 									<small>{app.tagline}</small>
