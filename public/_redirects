@@ -3,18 +3,25 @@
 /p/automating-carl-pullein-s-time-sector-system-using-todoist-filters /blog/automating-carl-pullein-s-time-sector-system-using-todoist-filters/ 301
 /p/logseq-migration-journey-challenges-delays-and-hopes /blog/logseq-migration-journey-challenges-delays-and-hopes/ 301
 
-# Former standalone Openza guide paths
-/tasks /openza/tasks/ 301
-/tasks/* /openza/tasks/:splat 301
-/reader /openza/reader/ 301
-/reader/* /openza/reader/:splat 301
-/flow /openza/flow/ 301
-/flow/* /openza/flow/:splat 301
+# Openza moved to openza.org
+/openza https://openza.org/ 301
+/openza/ https://openza.org/ 301
+/openza/* https://openza.org/:splat 301
 
-# Former Openza project detail paths
-/projects/tasks /openza/tasks/ 301
-/projects/tasks/ /openza/tasks/ 301
-/projects/reader /openza/reader/ 301
-/projects/reader/ /openza/reader/ 301
-/projects/flow /openza/flow/ 301
-/projects/flow/ /openza/flow/ 301
+# Former standalone Openza guide paths
+/tasks https://openza.org/tasks/ 301
+/tasks/* https://openza.org/tasks/:splat 301
+/reader https://openza.org/reader/ 301
+/reader/* https://openza.org/reader/:splat 301
+/flow https://openza.org/flow/ 301
+/flow/* https://openza.org/flow/:splat 301
+
+# Former project pages
+/projects / 302
+/projects/ / 302
+/projects/tasks https://openza.org/tasks/ 301
+/projects/tasks/ https://openza.org/tasks/ 301
+/projects/reader https://openza.org/reader/ 301
+/projects/reader/ https://openza.org/reader/ 301
+/projects/flow https://openza.org/flow/ 301
+/projects/flow/ https://openza.org/flow/ 301

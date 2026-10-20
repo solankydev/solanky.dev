@@ -46,7 +46,7 @@ const socialImageUrl = socialImage ? new URL(socialImage, Astro.site) : undefine
 		{socialImageUrl && <meta name="twitter:image" content={socialImageUrl} />}
 		<link rel="alternate" type="application/rss+xml" title="Deependra Solanky" href="/rss.xml" />
 		<meta name="theme-color" content="#f7f9f9" />
-		<link rel="icon" type="image/svg+xml" href="/openza-favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
@@ -57,7 +57,6 @@ const socialImageUrl = socialImage ? new URL(socialImage, Astro.site) : undefine
 				<div class="header-actions">
 					<nav class="primary-nav" aria-label="Primary navigation">
 						<a href="/blog/" aria-current={currentPath.startsWith('/blog') ? 'page' : undefined}>Blog</a>
-						<a href="/projects/" aria-current={currentPath.startsWith('/projects') ? 'page' : undefined}>Projects</a>
 						<a href="/about/" aria-current={currentPath.startsWith('/about') ? 'page' : undefined}>About</a>
 					</nav>
 					<button id="theme-toggle" type="button" aria-label="Use dark theme">Dark</button>
